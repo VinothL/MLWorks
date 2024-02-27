@@ -22,7 +22,7 @@ class DataIngestion:
         self.ingestion_config = DataIngestionConfig()
         logging.info("Data Ingestion Config created")
     
-    def dataIngestionExecutor(self):
+    def runDataIngestion(self):
         logging.info('Data Ingestion Starts')
         try:
             df = pd.read_csv('Notebooks/data/processed_data.csv')
@@ -56,7 +56,7 @@ class DataIngestion:
 if __name__ == "__main__":
     logging.info('Executing the DataIngestion Test from Main')
     di =  DataIngestion()
-    train_data,test_data = di.dataIngestionExecutor()
+    train_path,test_path = di.runDataIngestion()
 
 
 

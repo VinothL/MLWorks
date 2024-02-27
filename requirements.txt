@@ -6,4 +6,6 @@ plotnine
 scikit-learn
 xgboost
 dataclasses
+dill
+
 #-e .
