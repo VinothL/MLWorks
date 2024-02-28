@@ -33,6 +33,9 @@ class DataTransformation():
             numCols = ['CreditScore', 'Tenure', 'NumOfProducts']
             catCols = ['Geography', 'Gender']
 
+            logging.info('Numerical Columns :' + str(numCols))
+            logging.info('Categorical Columns :' + str(catCols))
+
             numPipe = Pipeline(
                 steps =[
                     ("scaler",StandardScaler())

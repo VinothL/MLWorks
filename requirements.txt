@@ -7,5 +7,6 @@ scikit-learn
 xgboost
 dataclasses
 dill
+flask
 
 #-e .
